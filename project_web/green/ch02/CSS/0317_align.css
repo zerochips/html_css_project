@@ -1,0 +1,44 @@
+h1{
+    color: blue;
+}
+
+p{
+    text-align: justify;
+    line-height: 2;
+    /* text-align: left;  */
+    /* text-align: center; */
+    /* text-align: right; */    
+
+    /* 
+        left    : 왼쪽 정렬
+        center  : 가운데 정렬
+        rignt   : 오른쪽 정렬
+        justify : 양쪽 정렬
+    */
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+
+   /*
+    hover : 마우스를 올렸을 때 동작함    
+   */  
+}
+
+/* 
+disc
+circle
+square
+none
+
+decimal
+lower-roman
+upper-roman
+lower-alpha
+upper-alpha
+
+*/

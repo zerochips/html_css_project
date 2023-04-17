@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-2-size</title>
+    <!-- <link rel="stylesheet" href="./"> -->
+    <style>
+        *{ margin: 0; padding: 0; }
+
+        #container{ width: 1000px; margin: 0 auto; }
+
+        header{ height: 100px; padding: 10px; border: 1px solid #ccc; background-color: blue; }
+        section{ width: 627px; height: 600px; padding: 10px; border: 1px solid #ccc; background-color: rgb(182, 182, 182); float: left; }
+        aside{ width: 327px; height: 600px; padding: 10px; border: 1px solid #ccc; float: right;}
+        footer{ height: 100px; padding: 10px; border: 1px solid #ccc; background-color: rgb(255, 217, 0); clear: both; }
+        .top-title{ color: white; text-align: center;}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 class="top-title">사이트 제목</h1>
+        </header>
+        
+        <section>
+            <h1 class="middle-left">본문</h1>
+        </section>
+
+        <aside>
+            <h1 class="middle-right">사이드바</h1>
+        </aside>
+
+        <footer>
+            <h1 class="bottom-text">바닥글</h1>
+        </footer>
+
+    </div>
+</body>
+</html>

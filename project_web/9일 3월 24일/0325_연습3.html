@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+
+        /* visibility 의 hidden 사용해 보았음 */
+        #wrap1{ width: 300px; height: 300px; border: 1px solid red; position: relative; visibility: hidden;}
+        .box{ width: 50px; height: 50px; border: 1px solid red; /* background-color: orange; */ position: absolute; 
+              background: url("images/남대문.jpg") no-repeat; background-size: 100% 100%; }
+        .boxes1{ top: 0; left: 0;  }
+        .boxes2{ top: 0; right: 0; }
+        .boxes3{ bottom: 0; right: 0; }
+        .boxes4{ bottom: 0; left: 0; }
+        .boxes5{ top: 100px; left: 100px; }
+
+        /* #wrap2{ position: fixed; */ /* position: absolute; right: 30px; top: 50px; */
+        .image-in-text{ width: 800px; height: 500px; margin: 0 auto; background: url("./images/서울바이브.jpg") no-repeat; 
+        background-size: 100%; position: relative; } /* background-size 배경 이미지에만 적용 가능 */
+        .font-css{ color: rgb(188, 255, 205); font-size: 100px; font-weight: bolder; 
+                   position: absolute; bottom: 100px; right: 40px; text-shadow: 4px 4px tomato; }
+
+        #fixed{ position: fixed; top: 20px; right: 40px; }
+        /* overflow 의 auto 사용해 보았음 */
+        #text p{ width: 100px; height: 800px; background-color: orange; overflow: auto; }
+
+        .z1{ width: 100px; height: 100px; margin: 0 auto; position: fixed;  }
+        .square1{ background-color: red; top: 1000px; right: 150px; z-index: 2; }
+        .square2{ background-color: rgb(207, 130, 130); top: 1030px; right: 50px; z-index: 3; }
+        .square3{ background-color: #000; top: 950px; right: 100px; z-index: 1; }
+        
+    </style>
+</head>
+<body>
+
+    <div id="wrap1">
+        <div class="box boxes1"></div>
+        <div class="box boxes2"></div>
+        <div class="box boxes3"></div>
+        <div class="box boxes4"></div>
+        <div class="box boxes5"></div>
+    </div>
+
+    <div id="wrap2">
+        <div class="image-in-text">
+            <div class="font-css">CSS3</div>
+        </div>
+    </div>
+
+    <div id="fixed">
+        <img src="./images/서울바이브.jpg" alt="서울바이브" width="500px" height="300px">
+    </div>
+
+    <div id="text">
+        <p>이근 전 해군특수전전단(UDT/SEAL) 대위(39)가 유튜버 구제역(31·본명 이준희)의 결투 신청을 수락했다. 단 구제역이 유튜브 채널을 영구 삭제해야 한다는 조건을 내걸었다.
+            이근은 지난 24일 유튜브 채널 'ROKSEAL' 커뮤니티를 통해 "구제역 결투를 수락한다"고 밝혔다. 그러면서 채널 삭제 후 결투계약서 초안을 이메일로 보낼 것을 요구했다.
+            앞서 구제역은 지난 21일 자신의 유튜브 채널에서 "제가 질 게 뻔해도 이근 얼굴에 주먹 한 방을 날리고 싶다. 우리 어머니를 모욕한 당신을 용서하지 못하겠다"며 
+            "제안에 응해준다면 두 번 다시 당신을 언급하지 않고, 폭행으로 고소한 사건도 취하하겠다. 남자라면 빼지 말고 저랑 로드FC 무대 위에서 한판 붙자"고 맞대결을 신청했다.
+            이근은 구제역을 향해 "허위사실 유포 관련 재판에서 양팡(유튜버)에게 졌으니 네 채널을 삭제하겠다고 한 약속을 지켜라. 판결문에서는 네가 허위사실 유포범이라고 결론 났다. 남자답게 채널 삭제해라"고 말했다.
+            이근이 결투계약서에 포함시킨 계약 내용은 △구제역 유튜브 채널 영구 삭제 및 평생 유튜브 채널 개설 금지 △이근 언급 금지 △고소 사건 취하 △무규칙 맨몸 싸움을 진행하고 서로 폭행이나 살인 미수로 고소 금지 등이다.
+            이에 대해 구제역은 "해당 재판은 제보자가 피고에게 합의금을 받고 끝난 사건이다. 분명히 말씀드리지만, 재판에서 진 사실이 없다"라고 했다. 
+            채널 삭제를 제외한 나머지 조건은 받아들이는 한편, 결투로 얻은 수익금 전액을 국가유공자에게 기부하자는 조건을 하나 추가했다.
+            두 사람은 2020년부터 갈등을 빚어왔다. 구제역은 이근을 둘러싼 여러 의혹을 제기해왔다. 이근은 지난해 12월 "거짓으로 날 깎아내린다. 
+            얼마나 네가 역겨우면 네 어머니가 스트레스받아 일찍 돌아가시냐", "얼마나 쓰레기를 낳았는지 너희 부모님이 참 한심하겠다" 등 비판했다.
+            이에 구제역은 "치매 걸린 어머니를 11년째 홀로 모시다가 지난해 11월 보내드렸다"며 "이근은 한 달도 채 되지 않아 어머니를 모욕하고 조롱했다. 패드립(부모를 비하하는 표현)은 좀 아니지 않냐"고 거세게 반발했다.
+            이근은 지난해 3월 외교부의 허가를 받지 않고 여행경보 4단계(여행금지)가 발령된 우크라이나에 입국한 혐의로 기소됐다. 
+            또 지난해 7월 서울 중구에서 운전 도중 오토바이와 사고를 낸 뒤 구조 조치 없이 현장을 떠난 혐의(특가법상 도주치상)도 받는다.
+            이근은 지난 20일 열린 첫 재판에서 여권법 위반 혐의를 인정한다고 밝혔다. 다만 도주치상 혐의에는 "차량을 충격한 사실을 인식하지 못했고 도주의 고의도 없었다"며 부인했다.
+            당시 구제역은 공판을 마치고 나오는 이근에게 "6년째 신용불량자인데, 채권자에게 미안하지 않냐"고 질문했다. 이에 이근은 화를 내며 구제역의 얼굴을 한 차례 폭행했다.
+            구제역은 법원 청사를 나와서도 "저를 폭행하신 건 어떻게 생각하냐"고 물었고, 이에 이근이 욕설하며 자신을 촬영 중인 구제역의 휴대전화를 손으로 쳐서 땅에 떨어뜨리기도 했다.</p>
+    </div>
+
+    <div id="z-index">
+        <div class="z1 square1"></div>
+        <div class="z1 square2"></div>
+        <div class="z1 square3"></div>
+    </div>
+       
+</body>
+</html>

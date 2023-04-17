@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장인</title>
+    <style>
+        *{            
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(233, 111, 111);
+        }
+
+        div{
+            border: 2px solid #000;
+            padding: 10px;
+        }
+
+        #hi{
+            text-align: center;
+            margin: 30px;
+            text-shadow: 2px 2px 3px rgb(255, 0, 0);
+        }
+
+        h2, h3{
+            color: orange !important;
+            font-family: "맑은 고딕";
+            /* 직접 지정한 색상이 있어도 !important 지정 색상이 표시됨 초록, 빨강으로 표시했지만
+            주황색으로 표시됨*/
+        }
+
+        p{
+            line-height: 2em;
+        }
+
+        .redtext{
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        h5{
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px;
+            text-shadow: 2px 2px 2px rgb(145, 145, 145);
+        }
+
+        .text1, .text2, .text3, .text4{
+            font-weight: bold;
+            background-color: black;            
+        }
+        .text1{
+            color: rgba(255, 255, 255);
+        }
+        .text2{
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .text3{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .text4{
+            color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./01_text.html">텍스트</a> |       <!-- 메뉴를 만들때 nav를 사용해요 -->
+        <a href="./02_images.html">이미지</a> |
+        <a href="./03_video.html">비디오</a> |
+        <a href="./04_audio.html">오디오</a> |
+        <a href="./05_link.html">링크</a> |
+        <a href="./06_table.html">표</a> |
+        <a href="./07_.html">기타</a> |
+        <a href="./08_selector.html">Selector</a> |
+        <a href="./09_web_design.html">연습문제</a> |
+        <a href="./10_bg_size.html">배경이미지</a> |
+        <a href="./11_anchor.html">앵커만들기</a> |
+        <a href="./12_box_model.html">박스모델</a> |
+    </nav>
+
+    <h1 id="hi">제목입니다. 안녕하세요</h1>
+    
+    <hr>
+
+    <div id="container">
+        <h2 style="color: green">레드향</h2> <!-- 스타일과 다른 컬러 설정 -->
+            <h3 style="color: red">상세 설명</h3>
+                <p>껍질에 붉은 빛이 돌아 <span class="redtext">레드향</span>이라 불린다.<br>
+                    <span class="redtext">레드향</span>은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.<br>
+                    비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.
+                </p>
+    </div>
+
+    <hr>
+
+    <h3>텍스트 링크 만들기</h3>
+        <p><a href="https://www.naver.com/">네이버 홈페이지</a></p>
+
+    <h3>이미지 링크 만들기</h3>
+        <a href="https://www.naver.com/" target="_blank">
+            <img src="https://s.pstatic.net/static/www/mobile/edit/20230317/mobile_15011792258.png" alt="결심" width="100px" height="100px">
+        </a>
+
+    <hr>
+
+    <h5>색상에 불투명도 넣기</h5>
+    <p class="text1">HTML+CSS</p>
+    <p class="text2">HTML+CSS</p>
+    <p class="text3">HTML+CSS</p>
+    <p class="text4">HTML+CSS</p>
+
+    <hr>
+
+
+
+</body>
+</html>

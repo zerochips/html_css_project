@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인/회원가입 메인 화면</title>
+    <script>
+        /* window.alert("환영합니다"); */
+    </script>
+    <style>
+        /* #naver{ background-color: green; color: white; border: 1px solid; border-radius: 15px; width: 100px; height: 25px; font-weight: bold;}
+        #naver:hover{ background-color: rgb(17, 75, 0); }
+
+        #login{ background-color: blue; color: white; border: 1px solid; border-radius: 3px; height: 28px; }
+        #login:hover{ background-color: rgb(0, 0, 116);}
+        
+        #check{ background-color: blue; color: white; border: 1px solid; border-radius: 3px; height: 28px; }
+        #check:hover{ background-color: rgb(0, 0, 116);} */
+
+       /*  *{ margin: 0; padding: 0; }
+        body{ background-color: black;}        
+        #wrap{ width: 300px; height: 500px; margin: 0 auto; background-color: rgb(255, 255, 255); border-radius: 40px;}
+        
+        h3{ width: }
+        p{ }
+        
+        button{ margin: 0; padding: 0; }
+        #login-button{ width: 200px; height: 35px; color: #fff; background-color: black; border: 0px; border-radius: 8px; }
+
+        #btbn{ width: 100px; height: 30px; background-color: white; font-weight: bold; border-radius: 8px; }
+ */
+
+        *{margin: 0; padding: 0;}
+        body{ background-color: rgb(255, 211, 67);}
+        
+        #wrap{          width: 400px; height: 700px; margin: 0 auto; 
+                        background-color: white; border-radius: 30px;
+                        position: relative; }
+
+        #header{        width: 400px; height: 350px; position: absolute; }
+
+        #section{       width: 400px; height: 350px; margin-top: 400px; position: absolute; }
+
+        h1{             margin: 130px 40px; font-size: 40px; text-align: center;
+                        }
+
+        p{              margin: 10px; font-weight: bold; font-size: 20px; 
+                        }
+        
+        button{         text-align: center; border-radius: 10px; font-size: 20px; font-weight: bold;
+                        background-color: rgba(0, 34, 8, 1); color: white; border: 0; }
+
+        a{              text-decoration: none; 
+                        }
+
+        button:hover{   background-color: rgb(255, 211, 67); color: rgba(0, 34, 8, 1);
+                        }
+        #login-button{  width: 370px; height: 50px; margin: 10px; }
+
+        #company-join{  width: 180px; height: 70px; margin: 10px;
+                        bottom: 50px; left: 3px; }
+
+        #staff-join{    width: 180px; height: 70px; margin: 10px 10px 10px 0;
+                        bottom: 50px; right: 3px; }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- <input id="check" type="button" value="확인" onclick="alert('완료하였습니다')">
+    <button id="login" type="button" name="login" onclick="alert('환영합니다')">로그인</button>
+    <button id="naver" type="button" name="naver-site" onclick="window.open('https://www.naver.com')">네이버</button>  -->
+
+    <div id = "wrap">
+        <div id="header">
+            <h1>장인보고서</h1>
+        </div>
+        <div id="section">
+            <p>장인 계정이 이미 있나요?</p>
+            <label>
+                <a href="0326_연습2-로그인.html">
+                    <button type="button" id="login-button" name="login-button">
+                        로그인
+                    </button>
+                </a>
+            </label>
+        
+            <p>장인보고서에 처음 오셨나요?</p>
+            <label>
+                <a href="">
+                    <button type="button" id="company-join" name="company">
+                        기업/프로덕션<br>회원가입
+                    </button>
+                </a>
+            </label>
+            <label>
+                <a href="">
+                    <button type="button" id="staff-join" name="staff">
+                        스탭<br>회원가입
+                    </button>
+                </a>
+            </label>                    
+        </div>
+    </div>
+    
+</body>
+</html>

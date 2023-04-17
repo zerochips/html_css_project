@@ -1,0 +1,46 @@
+body{    
+    background-color: #02233b;
+}
+#container{
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff 
+                url("../images/mic.png") 
+                no-repeat right bottom;
+    /* background: #ffffff 
+                url("../images/mic.png") 
+                no-repeat left 100px bottom 100px; */
+    /* background-color: #fff; */
+    /* background-color 가 
+    background 이미지 보다 
+    위에 있으면 표시되지 않는. 
+    모두 분리해 표기하면
+    위치 상관없이 나타남.
+    */
+    /* background-size: 30%; */
+    /* background-size: contain; */
+}
+
+h1{
+    background-color: #004344;
+    color: white;
+    text-align: center; 
+    padding: 10px;
+}
+
+h2{
+    font-style: italic;
+    text-align: center;
+}
+h3{
+    color: rgb(255, 106, 0);
+    font-weight: bold;
+}
+li{
+    list-style: none;
+    line-height: 3em;
+    margin: 10px;
+}
+

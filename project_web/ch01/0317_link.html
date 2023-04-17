@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>하이퍼링크 태그</title>
+        <style>
+            li{
+                color: blue;
+                font-size: 17px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!--
+            https 의 s를 붙이지 않아도 지정된 링크로 이동 가능
+            위치 지정이 없다면 가로 정렬
+            div 태그 division(구역)
+        -->
+        <div>
+            <a href="https://www.naver.com/">네이버</a>
+        </div>
+
+        <div>
+            <!-- 새창(탭)을 띄울때 _blank 사용함 -->
+        <a href="https://www.daum.net/" target="_blank">다음</a>
+        </div>
+
+        <div>
+            <!-- 내부 문서 연결(경로 설정) -->
+            <a href="figure.html">봄의 타조</a><br>
+            <a href="figure.html" target="_blank">봄의 타조</a>
+        </div>
+
+        <p></p>
+        <p></p>
+
+        <div>
+            <!-- 이미지를 클릭하면 페이지 연결 -->
+            <a href="./image_1.html">
+                <img src="./images/타조.jpg" alt="예쁜 타조"
+                 width="400" height="300">
+            </a>
+        </div>
+
+        <hr>
+
+        <div>            
+            <a href="https://zum.com/" target="_blank">줌</a>
+        </div>
+
+        <hr>
+
+        <a href="https://www.naver.com/" target="_blank">네이버</a>
+        <a href="https://www.daum.net/" target="_blank">다음</a>
+        <a href="https://zum.com/" target="_blank">줌</a>
+
+        <ul>            
+            <li><u>네이버</u></li>
+            <li>다음</li>
+            <li>줌</li>
+        </ul>
+
+        <hr>
+
+        <ol start="50">
+            <li><s>네이<small>버</small></s></li>
+            <li><i>다<sup>음</sup></i></li>
+            <li><strong>줌</strong></li>
+        </ol>
+
+        <h2>타조</h2>
+
+        <figure>
+        <img src="images/타조.jpg" width="70%"><br>
+        <img src="images/타조.jpg" width="500" height="300"><br>
+        <figcapation>눈<b>이</b> <sub>예쁜</sub> 타조</figcapation>
+        </figure>
+
+    </body>
+</html>
+
+
+<!-- 
+
+    ▶페이지 연결(하이퍼링크)
+    hyper referance
+    <a href="#" target="_blank">웹페이지 주소 삽입</a>
+    
+    target="_blank" : 클릭시 새창(탭)을 띄울때 사용
+    div(division)   : 구역
+
+    ▶사진
+    <img src="이미지 위치">
+
+    환경변수(path)
+    파일탐색기 - 내pc 우클릭 - 정보 - 고급시스템설정 - 고급 - 환경변수 - 편집 or 새로만들기 - (path)
+
+    
+
+    
+
+
+
+
+
+
+    live server - 톱니바퀴 - 확장설정 - 작업영역 - live server > Settings: Host
+    주소 변경이 가능하다
+
+    IDE(통합 계발 환경) - vs code 
+    html - tag(명령어), 구조
+    css - 디자인
+    javascript
+    -------------------
+    sql - 데이터베이스
+    -------------------
+    IDE(통합 계발 환경) - 이클립스
+    JAVA
+    -------------------
+    IDE(통합 계발 환경) - 파이참
+    -------------------
+    프로그래밍 언어↓
+    javascript - 
+    java
+    python
+
+ -->

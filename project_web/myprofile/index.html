@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문/답변 게시판</title>
+    <!-- 여기 CSS 링크 -->
+    <link rel="stylesheet" href="./css/style.css">  
+</head>
+<body>
+    <div id="container">
+        <header>
+             <!-- 로고 -->
+             <div id="logo">
+                <h1><a href=".index.html"><span class="D">A</span>bout Me</a></h1>
+            </div>
+            <!-- 상단 메뉴 -->
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="#information">About Me</a></li>
+                    <li><a href="#skill">Skill & Portfolio</a></li>
+                    <li><a href=".#career">Career</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 여기부터 메인 -->
+        <!-- 게시판 페이지 처리 포함 작성 -->
+        <!-- 표 작성 - 원래 데이터 베이스에서 처리 -->
+        <main id="resume">
+            <!-- information 시작-->
+            <section id="information">
+                <h3>About Me</h3>
+                <hr>
+                <hr>
+                <div class="me">
+                    <img src="./images/증명사진.jpg" alt="picture">
+                    <table>
+                        <tr>
+                            <th>Address</th>
+                            <td>: 서울시 양천구</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>: 010 9800 2141</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>: <a href="mailto:zerochips123@gmail.com">zerochips123@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <th>Github</th>
+                            <td>: <a href="https://github.com/zerochips">https://github.com/zerochips</a></td>
+                        </tr>
+                        <tr>
+                            <th>Blog</th>
+                            <td>: 준비 중</td>
+                        </tr>
+                        <tr>
+                            <th>학력</th>
+                            <td>: 부산경상대 호텔외식경영학 졸업</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>&nbsp; 경성대학교 경영학과 편입 졸업</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- information 끝-->
+            <!-- skill&portfolio 시작-->
+            <section id="skill">
+                <h3>Skill & Portfolio</h3>
+                <hr>
+                <hr>
+                <div id="fbt">
+                    <div class="front">
+                        <div class="skill-h3-font">
+                            <h3>Front-End</h3>
+                        </div>
+                        <div>
+                            <ul>                           
+                                <li>HTML</li>
+                                <li>css</li>
+                                <li>Java Script</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="back">
+                        <div class="skill-h3-font">
+                            <h3>Back-End</h3>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Java</li>
+                                <li>AWS</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="team_project">
+                        <div class="skill-h3-font">
+                            <h3>진행 예정 팀 프로젝트</h3>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>프로젝트1</li>
+                                <li>프로젝트2</li>
+                                <li>프로젝트3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- skill&portfolio 끝 -->
+            <!-- career 시작 -->
+            <section id="career">
+                <h3>Career</h3>
+                <hr>
+                <hr>
+                <div id="certificate">
+                    <div class="acquisition">
+                        <div class="hr-head-line">
+                            <h3>보유 자격증</h3>
+                            <div class="certi">    
+                                <div>컴퓨터활용능력2급</div>
+                                <div>MOS MASTER</div>
+                                <div>1종 보통 운전면허</div>
+                                <div>1종 대형 운전면허</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="Preparing">
+                        <div class="hr-head-line">
+                            <h3>보유 예정 자격증</h3>
+                            <div class="certi">
+                                <div>정보처리기사</div>
+                                <div>정보통신기사</div>
+                                <div>SQL</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="occupation">
+                        <div class="hr-head-line">
+                            <h3>前 직종 및 직무</h3>
+                            <div class="certi">                 
+                                <div>영화</div>
+                                <div>드라마</div>
+                                <div>웹드라마</div>
+                                <div>광고</div>
+                                <div>뮤비</div>
+                                <div>방송</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+            <!-- career 끝-->            
+        </main>
+        
+        <footer>
+            <ul id="bottomMenu">
+                <li><a href="#">회사 소개</a></li>
+                <li><a href="#">개인정보 처리 방침</a></li>
+                <li><a href="#">여행 약관</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+        </footer>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 
+    <ul>
+                        <li><span>Address&nbsp;: </span>서울시 양천구</li>
+                        <li><span>Phone &nbsp;&nbsp;: </span>010 9800 2141</li>
+                        <li><span>Email&nbsp;&nbsp;&nbsp;&nbsp;: </span><a href="mailto:zerochips123@gmail.com">zerochips123@gmail.com</a><li>
+                        <li><span>Github&nbsp; : </span><a href="https://github.com/zerochips?tab=repositories">https://github.com/zerochips</a></li>
+                        <li><span>Blog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </span>준비 중</li>                        
+                    </ul>
+                    <ul>
+                        <li><span>학력&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </span>부산경상대 호텔외식경영학 졸업<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;경성대학교 경영학과 3학년 편입 후 졸업</li>
+                    </ul>
+
+
+ -->

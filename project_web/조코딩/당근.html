@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whack-a-Mole Game</title>
+	<link rel="stylesheet" type="text/css" href="당근.css">
+</head>
+<body>
+	<h1>Whack-a-Mole Game</h1>
+	<div class="game-container">
+		<div class="score-container">
+			<h2>Score: <span id="score">0</span></h2>
+		</div>
+		<div class="grid-container">
+			<div class="grid-item"><img src="mole.gif"></div>
+			<div class="grid-item"><img src="mole.gif"></div>
+			<div class="grid-item"><img src="mole.gif"></div>
+			<div class="grid-item"><img src="mole.gif"></div>
+			<div class="grid-item"><img src="mole.gif"></div>
+			<div class="grid-item"><img src="mole.gif"></div>
+			<div class="grid-item"><img src="mole.gif"></div>
+			<div class="grid-item"><img src="mole.gif"></div>
+			<div class="grid-item"><img src="mole.gif"></div>
+		</div>
+
+		<div id="game-start" style="display:none;">GAME START</div>
+			<button id="start-button">Start Game</button>
+		<div id="game-over" style="display:none;">GAME OVER</div>
+			<button id="restart-button">Restart</button>
+	</div>
+
+	<script type="text/javascript" src="당근.js"></script>
+	<script type="text/javascript">
+		// define variables
+		var score = 0;
+		var moles = document.querySelectorAll(".grid-item img");
+		var scoreDisplay = document.querySelector("#score");
+
+		// helper function to generate random mole index
+		function randomMoleIndex() {
+			return Math.floor(Math.random() * moles.length);
+		}
+
+		// start game when Start Game button is clicked
+		document.querySelector("#start-button").addEventListener("click", function() {
+			document.querySelector("#game-start").style.display = "block";
+			document.querySelector("#start-button").style.display = "none";
+			setTimeout(function() {
+				document.querySelector("#game-start").style.display = "none";
+				document.querySelector("#game-over").style.display = "block";
+				document.querySelector("#restart-button").style.display = "block";
+			}, 10000); // game ends after 10 seconds
+			// mole click event listener
+			document.querySelectorAll(".grid-item").forEach(function(mole) {
+				mole.addEventListener("click", function() {
+					if (mole.querySelector("img").style.visibility === "visible") {
+						score++;
+						scoreDisplay.innerHTML = score;
+					}
+				});
+			});
+			// mole popping up and down
+			setInterval(function() {
+				moles[randomMoleIndex()].style.visibility = "visible";
+				setTimeout(function() {
+					moles[randomMoleIndex()].style.visibility = "hidden";
+				}, 1000);
+			}, 1000);
+		});
+
+		// restart game when Game Over button is clicked
+		document.querySelector("#restart-button").addEventListener("click", function() {
+			location.reload();
+		});
+	</script>
+</body>
+</html>

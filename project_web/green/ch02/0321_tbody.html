@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <style>
+        /* 그룹 선택자(,) */
+        table, th, td{
+            border: 2px solid #222;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 300px;            
+        }
+        thead{
+            background-color: #dddddd;
+        }
+        td{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>The head, tbody, and tfoot elements</h2>
+
+    <table>
+        <!-- <caption>표 만들기</caption> -->
+        <thead>
+            <tr>
+                <th>월별</th>
+                <th>저축액</th>
+            </tr>            
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>3월</td>
+                <td>10만</td>
+            </tr>
+            <tr>
+                <td>4월</td>
+                <td>10만</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>20만원</td>
+            </tr>
+
+        </tfoot>
+        
+    </table>
+
+    <hr>
+
+    <table>
+        <thead>
+            
+        </thead>
+        <tbody>
+                
+        </tbody>
+    </table>
+    
+</body>
+</html>
+

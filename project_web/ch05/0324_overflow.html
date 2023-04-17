@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow 속성</title>
+    <style>
+        div{ width: 300px; height: 200px; margin: 20px; padding: 10px; float: left; }
+        #ex1{ background-color: aquamarine; overflow: visible;}
+        #ex2{ background-color: orange; overflow: hidden;}
+        #ex3{ background-color: beige; overflow: auto;} /* 세로 스크롤만 생김 */
+        #ex4{ background-color: pink; overflow: scroll;} /* 가로 스크롤도 생김 */
+        #ex5{ background-color: beige; overflow: clip;}
+        #ex6{ background-color: beige; overflow: initial;}
+        #ex7{ background-color: beige; overflow: inherit;}
+    </style>
+
+</head>
+<body>
+    <div id="ex1">
+        <h2>overflow 속성 - visible</h2>
+        <p>
+            CSS에서 overflow 속성은 요소의 박스에 내용이 더 길때 어떻게 보일지를 선택하는 속성이다.<br>
+            - visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.<br>
+            - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+            - auto : 내용이 넘치면 스크롤바를 표시한다.
+            - scroll : 내용의 길이와 관계없이 스크롤바를 표시함
+        </p>
+    </div>
+    <div id="ex2">
+        <h2>overflow 속성 - hidden</h2>
+        <p>
+            CSS에서 overflow 속성은 요소의 박스에 내용이 더 길때 어떻게 보일지를 선택하는 속성이다.<br>
+            - visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.<br>
+            - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+            - auto : 내용이 넘치면 스크롤바를 표시한다.
+            - scroll : 내용의 길이와 관계없이 스크롤바를 표시함
+        </p>
+    </div>    
+    <div id="ex3">
+        <h2>overflow 속성 - auto</h2>
+        <p>
+            CSS에서 overflow 속성은 요소의 박스에 내용이 더 길때 어떻게 보일지를 선택하는 속성이다.<br>
+            - visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.<br>
+            - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+            - auto : 내용이 넘치면 스크롤바를 표시한다.
+            - scroll : 내용의 길이와 관계없이 스크롤바를 표시함
+        </p>
+    </div>    
+    <div id="ex4">
+        <h2>overflow 속성 - scroll</h2>
+        <p>
+            CSS에서 overflow 속성은 요소의 박스에 내용이 더 길때 어떻게 보일지를 선택하는 속성이다.<br>
+            - visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.<br>
+            - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+            - auto : 내용이 넘치면 스크롤바를 표시한다.
+            - scroll : 내용의 길이와 관계없이 스크롤바를 표시함
+        </p>
+    </div>    
+    <div id="ex5">
+        <h2>overflow 속성 - clip</h2>
+        <p>
+            CSS에서 overflow 속성은 요소의 박스에 내용이 더 길때 어떻게 보일지를 선택하는 속성이다.<br>
+            - visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.<br>
+            - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+            - auto : 내용이 넘치면 스크롤바를 표시한다.
+            - scroll : 내용의 길이와 관계없이 스크롤바를 표시함
+        </p>
+    </div>    
+    <div id="ex6">
+        <h2>overflow 속성 - initial</h2>
+        <p>
+            CSS에서 overflow 속성은 요소의 박스에 내용이 더 길때 어떻게 보일지를 선택하는 속성이다.<br>
+            - visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.<br>
+            - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+            - auto : 내용이 넘치면 스크롤바를 표시한다.
+            - scroll : 내용의 길이와 관계없이 스크롤바를 표시함
+        </p>
+    </div>    
+    <div id="ex7">
+        <h2>overflow 속성 - inherit</h2>
+        <p>
+            CSS에서 overflow 속성은 요소의 박스에 내용이 더 길때 어떻게 보일지를 선택하는 속성이다.<br>
+            - visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.<br>
+            - hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다.<br>
+            - auto : 내용이 넘치면 스크롤바를 표시한다.
+            - scroll : 내용의 길이와 관계없이 스크롤바를 표시함
+        </p>
+    </div>    
+</body>
+</html>
+
+<!-- 
+
+    overflow 속성
+    overflow: visible
+    overflow: hidden
+    overflow: auto
+
+    overflow: clip
+    overflow: scroll
+    overflow: initial
+    overflow: inherit
+
+    확인
+<iframe> 태그
+//shop-redapi.daum.net/red-apigate/daumtop/v6/planmall
+<span> 사용법
+
+0324_
+
+기획서(파워포인트, 피그마=개발자)
+제주 여행을 홍보하기 사이트 입니다.
+와이어프레임
+
+index.html
+product.html - gnb(global nav bar)
+video_salad.html
+qna.html
+about_me.html
+
+style.css
+main.js
+
+[이미지 배치할 때]
+display - 메뉴 처럼 일괄적으로 해야할 때
+float - 개별성을 가고있을 때
+position - 자주 사용하는 태그
+
+ -->

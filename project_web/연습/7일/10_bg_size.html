@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장인</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            border: 1px solid #ccc;
+            margin: 20px;
+            float: left; /* 가로 정렬로 변경해줌 왼쪽 정렬, 오른쪽 정렬 */
+            /* clear: both; 아래로 내리고 싶을 때 사용*/
+        }
+
+        .bg1{
+            background: url("./images/자기전.jpg") no-repeat top left;
+            background-size: auto;
+        }
+        
+        .bg2{
+            background: url("./images/자기전.jpg") no-repeat;
+            background-position: top 100px left 50px;
+            background-size: 200px; /* 고정크기 */
+        }
+
+        .bg3{
+            background: url("./images/자기전.jpg") no-repeat left top;
+            background-size: 80%; /* 상대크기 */
+        }
+
+        .bg4{
+            background: url("./images/자기전.jpg") no-repeat;
+            background-size: contain; /* 이미지가 축소되어 비율대로 보여줌 */
+        }
+
+        .bg5{
+            background: url("./images/자기전.jpg") no-repeat;
+            background-size: cover; /* 이미지가 박스의 크기만큼 꽉 채우고 나머지는 잘림 */
+        }
+        .bg6{
+            width: 300px;
+            height: 300px;
+            margin: 0px auto; /* 가운데 정렬 */
+            background: url("./images/자기전.jpg") no-repeat right bottom;
+            background-size: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./01_text.html">텍스트</a> |       <!-- 메뉴를 만들때 nav를 사용해요 -->
+        <a href="./02_images.html">이미지</a> |
+        <a href="./03_video.html">비디오</a> |
+        <a href="./04_audio.html">오디오</a> |
+        <a href="./05_link.html">링크</a> |
+        <a href="./06_table.html">표</a> |
+        <a href="./07_.html">기타</a> |
+        <a href="./08_selector.html">Selector</a> |
+        <a href="./09_web_design.html">연습문제</a> |
+        <a href="./10_bg_size.html">배경이미지</a> |
+        <a href="./11_anchor.html">앵커만들기</a> |
+        <a href="./12_box_model.html">박스모델</a> |
+    </nav>
+
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+    <div class="bg6"></div>
+    
+</body>
+</html>

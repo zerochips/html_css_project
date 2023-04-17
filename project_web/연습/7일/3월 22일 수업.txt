@@ -1,0 +1,97 @@
+[파일 가져오기]
+cd c:/
+cd green_project_web
+git pull
+
+[파일 가져오기]
+git clone 주소
+git pull
+
+[폼 만들기]
+로그인
+검색
+
+[로그인 폼]
+아이디: <input type="text">
+비밀번호: <input type="password">
+로그인 - 전송버튼 <input type="submit">
+
+라디오버튼
+<input type="radio">
+<input type="checkbox">
+
+<form>
+<fieldset>
+  <legend>소제목</legend>
+</fieldset>
+
+한줄입력 <input type="text">
+여러줄 입력
+
+<textarea rows=3 cols=60></textarea>
+파일첨부(업로드)
+<input type=file">
+
+입력상자
+<form>
+	<input type="text">
+</form>
+
+쿼리스트링 형태
+서버.jsp?id="강남역"
+
+<button>태그
+onclick="" 자바 스크립트와 연동
+
+유효성검사
+예)이메일
+
+웹 퍼블리셔 : html css javascript(화면 제작)
+웹디자인
+
+프런트엔드 - 웹 애플리케이션 개발자 : 백엔드(DB)
+프레임워크 - 리엑트(자바스크립트)
+
+<div id="container">
+
+<h1>프런트엔드 개발자 지원서
+
+<p1>블라블라
+<hr>
+
+<form action="frontend.jsp" method="post">
+
+<h4>개인정보
+<ul>
+<li>
+<label for="name" class="reg">이름</label>
+<input type="text" id="name" placeholder="공백 없이 입력하세요">
+</li>
+</ul>
+
+<h4>지원분야
+<ul>
+<li>
+<label><input type="radio" name="field" value="web">웹 퍼블리싱</label>
+</li>
+</ul>
+
+<h4>지원동기
+<textarea name="memo" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써주세요"></textarea>
+
+<div class="button">
+<input type="submit" value="접수하기">
+<input type="reset" value="취소하기">
+
+
+cd c:/
+cd html Tab
+git status
+git add .
+git commint -m "dd"
+git push
+
+
+</from>
+
+<div>

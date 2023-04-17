@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스들</title>
+    <style>
+        *{ margin: 0; padding: 0; }
+        
+        #wrap{ width: 1000px; height: 100px; margin: 0 auto; }
+        div{ margin: 10px; padding: 10px;}
+
+        .box1{ background-color: rgb(0, 0, 255); float: left;}
+        .box2{ background-color: rgb(255, 0, 0); float: left;}
+        .box3{ background-color: rgb(30, 255, 0); float: right;}
+
+        .box4{ background-color: rgb(255, 208, 0); clear: both;}
+        .box5{ background-color: rgb(255, 0, 234); clear: left;}
+        .box6{ background-color: rgb(92, 89, 77); clear: right;}
+        .box7{ background-color: rgb(80, 5, 43); clear: unset;}
+        
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>   
+        <div class="box5">box5</div>   
+        <div class="box6">box6</div>   
+        <div class="box7">box7</div>   
+    </div> 
+
+</body>
+</html>

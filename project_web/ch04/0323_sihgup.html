@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="./CSS/signup.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>회원 가입</h1>
+        <form action="register.jsp" method="post">
+            <fieldset id="field1">
+                <legend>사용자 정보</legend>
+                <ul>
+                    <li>
+                        <label for="uid" >아이디</label>
+                        <input type="text" id="uid" name="uid"
+                            placeholder="4자 ~10자사이, 공백없이" autofocus required>
+                    </li>
+                    <!-- required 작성하지 않고 가입하기 누르면 넘어가지 않음 -->
+                    <li>
+                        <label for="pwd1">비밀번호</label>
+                        <input type="password" id="pwd1" name="pwd1" size="30"
+                         placeholder="영문자와 숫자, 특수기호 포함 8자 이상" required>
+                         <!-- size 글 -->
+                    </li>
+                    <li>
+                        <label for="pwd2" >비밀번호 확인</label>
+                        <input type="password" id="pwd2" name="pwd2" required>
+                    </li>
+                    <li>
+                        <label for="email" >이메일</label>
+                        <input type="text" id="email" name="email" required>@
+                        <select id="email" name="email">
+                            <option>직접 입력</option>
+                            <option value="naver">naver.com</option>
+                            <option value="gmail">gmail.com</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="path">가입 경로</label>
+                        <select id="path" name="path">
+                            <option value="blog">블로그</option>
+                            <option value="search">검색</option>
+                            <option value="sns">SNS</option>
+                            <option value="etc">기타</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="memo" name="memo">메모</label>
+                        <textarea cols="50" rows="4" 
+                            id="memo" name="memo"
+                            placeholder="남길 말씀이 있다면 여기에"></textarea>
+                    </li>                   
+                </ul>
+            </fieldset>
+            <fieldset id="field2">
+                <legend>이벤트와 새로운 소식</legend>
+                <input type="radio" id="mailing_y" name="mailing">
+                <label for="mailing_y">메일 수신</label>
+
+                <input type="radio" id="mailing_n" name="mailing" checked>
+                <label for="mailing_n">메일 수신 안함</label>
+                <!-- 이렇게 해줘야 db에 하나만 들어가게 됨 -->
+            </fieldset>
+
+            <div id="button">
+                <input type="submit" value="가입하기">
+                <input type="reset" value="취소하기">
+            </div>
+
+        </form>
+    </div>    
+</body>
+</html>
+
+<!-- 
+    [파일 불러올때]
+cd c:/
+cd green_project_web
+git pull
+
+[목록 태그]
+dl, dt, 
+
+배치 속성
+- display(일괄 수직, 수평)
+- float(일괄 수직(개별))
+- position(독립, 개별)
+0323_layout-2.html
+<body>
+
+<header>
+</header>
+
+<section>
+</section>
+
+<footer>
+</footer>
+
+</body>
+
+
+-컨텐츠의 크기
+box-sizing: content-box
+-컨텐츠의 크기 + 테두리 + 패딩
+box-sizing: border-box
+
+펫 프로젝트 확인하기
+
+cd - change directoty
+md(mkdir) - make directory
+cd.. - 상위 폴더 이동
+
+dir - 목록보기
+
+md gitTest - cd gitTest - 
+<form action= "jonin.jsp"
+<input type="text" id(자바,css선택자), name, placeholder="힌트문자"> 한 줄
+<input type="submin"> 서버 페이지로 전송
+<textarea> 여러줄 입력
+<select id, name, value>~<option>
+</form>
+
+속성
+type, placeholder(힌트), autofocus(커서), required(필수 - 반드시 써야함, 건너뛰기안됨), readonly(읽기전용)
+
+
+ -->

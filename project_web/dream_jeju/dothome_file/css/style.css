@@ -1,0 +1,174 @@
+/*----------- 닷홈 전용 -----------*/
+/* 폰트를 설정할 때 최상위 라인에 넣어야 설정이 적용이 된다 */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;500&display=swap');
+
+/* 전체 스타일 */
+*{ margin: 0; padding: 0; }
+#container{ width: 100%; margin: 0 auto; } /* 16:9 화면상 1600px로 설정 */
+main{ width: 1200px; margin: 0 auto; box-sizing: border-box; } /* main 은 1200px header 1600px footer 1200px */ /* border-box 때문에 자동으로 box가 맞춰진다  */
+
+/* header영역 스타일 */
+header{ height: 80px; background: rgb(1, 39, 1);} 
+header #logo{ width: 300px; float: left; padding-left: 30px; line-height: 80px; }
+/* header 로고 h1 */
+header #logo h1 a{ color: orange; text-decoration: none; font-style: italic; font-family: Merienda;}
+
+/* header 로고 <span> 으로 D 스타일 변경  */
+header #logo h1 a .D{ font-size: 70px; }
+
+
+/* header nav 메뉴바 */
+header nav{ width: 1000px; float: right; line-height: 80px; text-align: center; } /* width로 nav 수평 위치 변경 가능 / text-align: right; margin-right: 100px; 한 번 넣어봄 */
+header nav #topMenu{ list-style: none; }
+header nav #topMenu li{ margin: 0 30px; padding: 0 20px; display: inline-block; }
+header nav #topMenu li a{ color: white; text-decoration: none; font-weight: bold; font-size: 14px; }
+header nav #topMenu li a:hover{ color: orange; font-size: 20px; }
+
+
+/* main 영역 스타일 */
+#contents section{ margin: 30px 10px; } /* 오타 확인을 잘 하자! 그냥 복붙하자! */
+#contents section div{ margin: 10px; }
+#contents section div p{ line-height: 2; }
+
+#healing, #activity{ height: 300px; } /* section의 높이를 지정해야 함 / 그룹 선택자 */
+#healing img, #activity img{ margin-right: 20px; border-radius: 10px; float: left; }  /* 그룹 선택자 */
+
+#contents section .schedule h3{ margin-top: 20px; }
+#contents section .schedule ul li{ margin: 10px; list-style: none; }
+
+#sightseeing ul li{ margin: 10px 30px; list-style: square; }
+#sightseeing ul li a{ color: rgb(13, 0, 255); text-decoration: none; }
+#sightseeing ul li a:hover{ text-decoration: underline; }
+
+/* Q&A 설정  */
+#board{ width: 1000px; }
+#board h3{ color: rgb(1, 39, 1); }
+#board ul{ display: inline-block; }
+#board ul li{ text-decoration: none;}
+
+/* footer 영역 스타일 */
+footer{ width: 1200px; height: 100px; margin: 0 auto; border-top: 2px solid #9d9d9d; }
+footer #bottomMenu{ padding: 20px; list-style: none; }
+footer #bottomMenu li{ margin: 0; padding: 0 10px; display: inline-block; border-right: 1px solid #444; } /* margin 0 으로 변경 수정하였음 */
+footer #bottomMenu li a{ color: #444; text-decoration: none; }
+footer #bottomMenu li:last-child{ border: none; }
+/* footer #bottomMenu li:nth-child(4){ border: none; } last-child / nth-child(4 둘 다 사용 가능하다*/ 
+
+
+/* product 스타일 */
+#product p{ line-height: 2; }
+#product h2{ margin-bottom: 10px; }
+#discription{ width: 800px; margin: 30px auto; padding: 20px 60px; border: 1px dotted #333; border-top-left-radius: 30px; border-top-right-radius: 30px;}
+#discription img{ margin: 0px 10px 10px 10px; border-radius: 10px;  }
+
+#receipe{ width: 800px;  margin: 0 auto; padding: 20px 60px; border: 1px dotted #333; }
+#receipe ol{ padding-left: 20px; margin-top: 10px; }
+#receipe ol li{ line-height: 1.7; }
+
+
+/* 레드향 소개 상품 구성 - 하단 표 스타일 */
+#package{ width: 800px; margin: 30px auto; padding: 20px 60px; border: 1px dotted #333; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; }
+
+#package table{ width: 800px; }
+#package table caption{ font-weight: bold; margin-bottom: 10px; }
+
+#package table, th, td{ border: 1px solid #000; border-collapse: collapse; padding: 10px 20px; text-align: center;}
+
+
+/* ----------- 질문 / 답변 Q&A 스타일 ----------- */
+#board section h2{margin: 30px 10px;}
+#board #tbl_board{border: 1.5px solid #016801; border-collapse: collapse; 
+    margin: 0 50px; width: 800px; height: 80px; margin-bottom: 150px;}
+#tbl_board th, #tbl_board td{border: 1px solid #016801; text-align: center;}
+#tbl_board thead{background: #eee;}
+
+/* 첫번째 번호 열 */
+#tbl_board td:nth-child(1){ width: 50px; }
+/* #tbl_board td:first-child 글자로 첫번째 번호열 수정 가능 - 마지막은 last-child 로 사용 */
+/* #tbl_board td:first-child{ width: 50px; } */
+/* text-align이 제목 라인(2번째줄)까지 먹어서 나만 따로 설정해 주었음 */
+#tbl_board td:nth-child(2){text-align: left;}
+.btn{ text-align: right; margin-right: 250px; }
+.btn button{ padding: 10px 15px; margin-bottom: 50px; cursor: pointer; }
+
+
+
+/*----------- aboutme information 시작 ----------- */
+
+#information{ margin: 0 0 20px 0; } /* 여기 수정해야함 */
+#information .me{ width: 1000px; height: 400px; }
+#information h3{margin: 20px 0 5px 10px;}
+/* 증명사진 왼쪽 정렬 and */
+.me img{ width: 300px; float: left;}
+
+/*----------- aboutme 설정 information 정보 정리 -----------*/
+#information table{ border-collapse: collapse; }
+#information table th, td{ border: 0; }
+#information table td:nth-child(2){ margin: 0; padding: 0 10px; text-align: left; }
+#information table td a{ color: #1b0094;}
+
+/*----------- aboutme information 끝 ----------- */
+
+/*----------- aboutme career 시작 ----------- */
+
+#career{ margin: 0 0 30px 0;}
+#career h3{margin: 20px 0 5px 10px;}
+
+#certificate{   margin: 0 auto; }
+
+#certificate .certi div{ height: 200px; margin: 5px; padding: 20px; font-weight: bold; font-size: 22px;
+                         background-color: rgb(228, 228, 228); border-radius: 5px; float: left;  }
+
+
+
+/* 보유 자격증 | 보유 예정 자격증 | 직종 세로 너비 설정 구간 */
+#certificate .hr-head-line{ height: 300px; }
+
+/* 보유 자격증 가로 너비 설정 구간 */
+.acquisition .certi div{ width: 250px; text-align: center;}
+
+/* 보유 예정 자격증 가로 너비 설정 구간 */
+.Preparing .certi div{ width: 350px; text-align: center;}
+
+/* 직종 및 직무 가로 너비 설정 구간 */
+.occupation .certi div{ width: 150px; text-align: center;}
+
+/*----------- aboutme career 끝 ----------- */
+
+
+/*----------- aboutme skill 시작 ----------- */
+/* Q&A 설정 skill 구간 */
+#skill #fbt div{ display: inline-block; line-height: 2; }
+#skill #fbt div ul{ margin: 30px; font-size: 18px;  }
+
+#skill #fbt h3{ margin: 50px; }
+
+/* aboutme 설정 h3 헤드 구간  */
+#fbt .front .back .team_project{ text-align: center;}
+#fbt .front .back h3{ width: 130px; }
+#fbt .team_project h3{ width: 200px; }
+
+/* aboutme 설정 li 구간 */
+
+/*----------- Q&A skill 끝 ----------- */
+
+
+/*----------- register 스타일 -----------*/
+#register section h2{margin: 30px 10px; text-align: center; }
+#register #tbl_write{ border: 1.5px solid green; border-collapse: collapse; width: 700px; margin: 0 auto 30px auto; }
+
+/*----------- register text 글 제목 -----------*/
+#tbl_write input[type="text"]{ width: 650px; height: 25px; padding: 10px; border-radius: 10px; }
+
+/*----------- register textarea 글 내용-----------*/
+#tbl_write textarea{width: 650px; }
+#tbl_write textarea[placeholder="글 내용"]{ padding: 10px; border-radius: 10px; }
+
+#tbl_write input[type="submit"], input[type="reset"]{ padding: 10px 20px; }
+#tbl_write tr:last-child{ text-align: center;}
+
+
+
+/* 개인 정보 정렬 */
+/* .me ul li{ list-style: none; line-height: 2em; font-size: 18px; } */
+/* .me ul li span{ font-weight: bold;} */

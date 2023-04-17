@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+*{ margin: 0; padding: 0;}
+#container { width: 100%; margin: 0 auto; background: #f00; color: #fff; }
+header{ height: 100px; border: 1px solid #fff; padding: 10px; }
+section{ height: 600px; border: 1px solid #fff; padding: 10px; }
+footer{ height: 100px; border: 1px solid #fff; padding: 10px; }
+
+/* 태블릿 기준 */
+@media screen and (min-width: 780px){
+    #container{ background: #0f0; }
+}
+
+/* pc 기준 */
+@media screen and (min-width: 1024px){
+    #container{ width: 1024px; /* 가로 사이즈 고정되어버림 - 커지지 않음 */ background: blue; }
+}

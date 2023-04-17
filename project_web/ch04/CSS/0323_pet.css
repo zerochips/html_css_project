@@ -1,0 +1,21 @@
+*{ margin: 0; padding: 0; }
+
+#container{ width: 1000px; margin: 0 auto; }
+
+/* header 영역 스타일 */
+header{ height: 80px; background-color: #006699; } /*  width 생략 -> 1000px */
+
+header #logo{ width: 200px; line-height: 80px; float: left; }
+header #logo h1{color: #fff; text-decoration: none;}
+header #logo h1 a:hover{ color: yellow; }
+header #logo a{ text-decoration: none; color: #fff; }
+
+header nav{ width: 750px; float: right; line-height: 80px; margin-right: 50px; }
+
+header nav ul{ list-style: none; margin-left: 200px; }
+header nav ul li{ float: right; }
+
+header nav ul li a{ display: block; padding: 0 20px; color: #fff; text-decoration: none; }
+header nav ul li a:hover{ background-color: #2fd2fd; color: #fff; }
+
+section h2{ margin: 20px; }

@@ -1,0 +1,35 @@
+#wrap{
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+div{
+    margin: 10px;
+    padding: 10px;
+}
+.box1{
+    /* width: 100px; */
+    background: #00f;    
+    /* display: inline; */
+    /* display: inline-block; */
+    float: left;
+    /* inline-block 과 같은  */
+}
+.box2{
+    background: #f00;
+    float: left;
+}
+.box3{
+    background: rgb(0, 131, 4);
+    float: right;
+}
+.box4{
+    background: #ffd900;
+    /* float: right; */
+    /* 속성 해제 - 
+    위에 있는 box 
+    오른쪽 배치 속성을 지님 */
+    clear: both;
+    /* clear: right;
+    clear: left;   */
+}

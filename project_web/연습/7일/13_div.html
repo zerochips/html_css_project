@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3/21(화) 수업 복습</title>
+    <style>        
+        .blue{
+            border: 3px solid rgb(0, 0, 255, 0.2);
+            padding: 10px;
+            width: 500px;
+            background: rgb(155, 155, 255);
+            margin: 20px auto;
+        }
+
+        .chan{
+            line-height: 1.5em;
+        }
+
+        .blue:hover{
+            background:rgb(0, 0, 255);
+            color: rgb(255, 255, 255);
+        }
+
+        .circle{
+            background-position: top right;
+        }
+        
+        .pText{
+            border-radius: 300px;
+            /* display: inline; */
+            display: inline-block;
+        }
+
+        .box_model{
+            border: 1px solid rgb(201, 201, 201);
+            width: 600px;
+            padding: 10px;
+            margin: 0 auto;            
+        }
+        
+        .dot_line{
+            border: 2px dotted rgb(0, 0, 255);
+            padding: 10px;
+
+        }
+        .box_head{
+            border-bottom: 5px solid rgb(0,0,0);
+            padding: 0 0 10px 0;
+        }
+
+        .bg1{
+            background: url(./images/도서관에서.jpg) no-repeat;
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+            background-size: cover;
+            border-radius: 20px;
+        }
+
+        #dis{
+            margin: 30px;
+            width: 300px;            
+        }
+        .none{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="blue">
+        <h3>웹 디자인 트렌드를 따라잡는 비법 대공개!</h3>
+
+        <div class="pText">
+        <P class="chan">그래픽 프로그램으로 웹 디자인 요소를 일일이 만들어 웹사이트를 제작하는 시대는 지났다. 
+        이제 모바일, 태블릿, PC 등 멀티 디바이스에 한 번에 적용할 수 있는 웹 디자인 방법을 알아야한다. 
+        바로 <b>코딩을 이용한 웹 디자인</b>이다.</P></div>
+    </div>
+
+    <hr>
+
+    <!-- 이미지 중앙 정렬 확인할 것 -->
+
+    <div class="circle">
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="./green/ch03/images/1-1.jpg" alt="300이미지">
+        </a>
+    </div>
+
+    <hr>    
+
+    <div class="box_model">
+
+        <h1 class="box_head">박스 모델</h1>
+
+        <p class="dot_line">CSS 박스 모델이란 웹 문서의 내용을 박스 형태로 정의하는 방법이다. 
+            실제 콘텐츠 영역, 박스와 콘텐츠 영역 사이의 여백인 패딩(padding), 
+            테두리 영역과 박스 모델간의 여백인 마진(margin)으로 구성되어 있다.</p>
+
+            <div class="bg1"></div>
+    </div>
+
+    <hr>
+    
+    <div id="dis">
+        <img src="./images/결심.jpg" alt="결심">
+        <img src="./images/도서관에서.jpg" alt="도서관" class="none">
+        <img src="./images/수영장.jpg" alt="수영장">
+    </div>
+
+    
+
+    
+    
+
+    
+    
+</body>
+</html>

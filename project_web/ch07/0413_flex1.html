@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>flex 속성</title>
+        <style>
+            /* display: flex; 속성은 부모 박스에서 사용
+               자식을 원하는 방식으로 배치할 수 있음
+             */
+            #wrap{ display: flex; }
+            div.box{ width: 200px;  height: 100px;  background:  #0f0; margin: 10px;
+                 /* display: inline-block; */ /* float: left; */                 
+                }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
+
+<!-- 
+    prepend() -  div에 p를 마지막 첫번째 요소로 삽입(아래)
+    append() - $(div).append(<'p'>) div에 p를 마지막 자식요소로 삽입
+
+    prev() : 이전 요소
+    next() : 다음(아래) 요소 선택
+    siblings() : 형제
+
+    parent() : $('p')의 부모자식요소
+
+    align-items
+    flex-start: 요소들을 컨테이너의 꼭대기로 정렬합니다.
+    flex-end: 요소들을 컨테이너의 바닥으로 정렬합니다.
+    center: 요소들을 컨테이너의 세로선 상의 가운데로 정렬합니다.
+    baseline: 요소들을 컨테이너의 시작 위치에 정렬합니다.
+    stretch: 요소들을 컨테이너에 맞도록 늘립니다.
+
+
+    flex-direction
+    row: 요소들을 텍스트의 방향과 동일하게 정렬합니다.
+    row-reverse: 요소들을 텍스트의 반대 방향으로 정렬합니다.
+    column: 요소들을 위에서 아래로 정렬합니다.
+    column-reverse: 요소들을 아래에서 위로 정렬합니다.
+ -->

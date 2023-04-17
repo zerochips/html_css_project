@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-name 속성</title>
+    <style>
+        div{ width: 100px; height: 100px; float:left; margin: 50px 50px; }
+        .box1{ background-color: orange; animation-name: orange-box; animation-duration: 3s; animation-iteration-count: infinite; }
+        .box2{ background-color: green; animation-name: green-box; animation-duration: 3s; animation-iteration-count: infinite;}
+
+        @keyframes orange-box{
+            from{
+                border-radius: 0;
+            }to{
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes green-box{
+            from{
+                transform: rotate(0deg);
+            }50%{
+                transform: rotate(45deg);
+            }toP{
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

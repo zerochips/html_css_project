@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#container{ width: 100% }
+
+/*---------------- header 스타일 ----------------*/
+header{ width: 100%; height: 320px; }
+nav{ width: 100%; height: 60px; background: #000; /* position: fixed; */ /*-상단 메뉴 계속 떠있음 */}
+nav #main-nav{ list-style: none; text-align: center;}
+nav #main-nav li{ display: inline-block; line-height: 60px; margin: 0 30px; /* font-size: 6px; */ }
+nav #main-nav li a{ text-decoration: none; color: white;}
+nav #main-nav li a:hover{ color: orange;}
+#main-pic img{ width: 100%; height: 260px; }
+
+/*---------------- section intro 스타일 ----------------*/
+section{ height: 300px; margin: 0 auto; padding: 15px 5%;}
+/* nth-child() -> 부모가 container, nth-of-type() -> section은 형제 */
+/* section:nth-child(2n+1){ background: #eee;} */ /* 부모라인 표현 - 회색 배경 생김 */
+section:nth-of-type(2n){ background: #eee; font-size: 13px;} /* 형제라인 표현 - 회색 배경 생김*/
+section .page-title{margin: 20px 0;}
+section p{line-height: 2;}
+section .text b{ color: red;}
+section .content .photo{ display: none; }
+
+/*---------------- section choice 스타일 ----------------*/
+#choice .content h2{ margin-bottom: 20px; }
+#choice .content ol{ padding-left: 30px; }
+#choice .content ol li{ line-height: 2; }
+
+/*---------------- footer 스타일 ----------------*/
+footer{ height: 80px; border-top: 2px solid #222;}
+#bottom-menu{ list-style: none; margin: 10px 10px 10px 40px; }
+#bottom-menu li{ display: inline-block; margin: 10px 0; padding: 0 10px; border-right: 1px solid #ccc;}
+#bottom-menu li a{ text-decoration: none; color: #444;}
+#bottom-menu li:last-child{ border: none; } /* 사이트 맵 뒤 라인 안보이게 설정 */
+
+/*---------------- ↑↑↑ 모바일 버전 ↑↑↑ ----------------*/
+
+
+
+/*---------------- ↓↓↓ 태블릿 버전 ↓↓↓  ----------------*/
+@media screen and (min-width: 780px){
+    header{ height: 350px; }
+    #main-pic img{ height: 290px; }
+    section{ height: 400px; }
+    section .content h1{ font-size: 30px;}
+    section .text{ font-size: 18px;}
+    section .text li{ font-size: 15px;}
+    section .text b{ color: red;}
+    section:nth-of-type(2n){ background: #eee; font-size: 20px;}
+    #intro, #choice{ float: left; width: 50%; }
+    #map{ clear: both; }
+    #map .photo{ display: block; float: left; margin-right: 50px;}
+}
+
+/*---------------- ↓↓↓ PC 버전 - 1200 이상 ↓↓↓  ----------------*/
+@media screen and (min-width: 1200px){
+    #container{ width: 1200px; margin: 0 auto;}
+    header{ height: 380px; }
+    #main-pic img{ height: 320px; }
+    section{ height: 350px; }
+
+    #intro, #choice, #map{ width: 100%; padding: 10px 5%; }
+    section .content .photo{ display: block; }
+    section:nth-of-type(2n){ background: #eee; font-size: 20px;}
+    section p{line-height: 2.5;}
+    #intro .photo, #map .photo{float: left; margin-right: 20px; }
+    #choice .photo{float: right; margin-right: 20px; }
+    
+}

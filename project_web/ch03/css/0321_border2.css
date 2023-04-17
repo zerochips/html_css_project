@@ -1,0 +1,29 @@
+.wrap{
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+h1{
+    /* border: 5px solid #000; */
+    /* <u> 밑줄도 있지만 border-bottom을 사용해서 아래쪽만 라인이 생성되게 가능 */
+    border-bottom: 5px solid #000;
+    padding-bottom: 5px;            
+}
+
+p{
+    border: 2px dotted #00f;
+    padding: 10px;
+}
+.bg{
+    /* .. 으로 파일을 설정해줘야 됨.
+    같은 폴더에 있지 않기 때문에
+    ..으로 상위 폴더로 이동 후 경로를 설정해준다 */
+    background: url(../images/1.jpg) no-repeat;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    background-size: cover;
+    border-radius: 10px;
+    /* 모서리 둥글게 반지름의 길이 - 10px */            
+}

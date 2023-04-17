@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+nav{
+    width: 90%;
+    height: 80px;
+    background-color: #006699;   
+}
+ul {
+    list-style: none;
+    text-align: right;
+    margin-right: 100px;
+    /* padding: 10px 0; */
+}
+ul li{
+    display: inline-block;
+/*  margin: 20px;
+    padding: 10px 0; */
+    margin: 0 20px;
+    /* 수직 정렬- height와 같으면 가운데 정렬 */
+    line-height: 80px; /* nav height 와 크기를 동일하게 */
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: yellowgreen;
+}
+section{
+    margin: 20px 0;
+}

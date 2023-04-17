@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로축구 경기 일정</title>
+    <style>
+        table{
+            border: 2px solid #cfcfcf;
+            border-collapse: collapse;
+            width: 300px;
+            height: 50px;
+        }
+        td{
+            border: 2px dotted #cfcfcf; /* 중복되는 색의 수는 하나로 합쳐줄 수 있다 예) #222222 -> #222 */
+            text-align: center;
+            padding: 10px;
+            /*
+            padding 을 이외 height 을 사용해도 괜찮다
+
+            padding : 안쪽 여백
+            padding-top
+            padding-right
+            padding-bottom
+            padding-left */
+        }
+        caption{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <table>
+        <caption>프로축구 경기 일정</caption>
+        <tr>
+            <td>울산</td>
+            <td>울산 vs 인천</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">부산</td>
+            <td>부산 vs 대전</td>
+        </tr>
+
+        <tr>
+            <!-- <td>하나로 합쳐졌기 때문에 삭제시켜준다</td> -->
+            <td>서울 vs 강원</td>
+        </tr>
+
+        <tr>
+            <td>서울</td>
+            <td>서울 vs 강원</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
+
+<!-- 
+    rowspan : 세로병합
+    colspan : 가로병합
+
+    <table>
+
+    <thead> 머리글
+        <tr>
+            <td></td>
+        </tr>
+    </thead>
+
+    <tbody>내용
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+
+    <tfoot> </tfoot> 요약
+
+ -->

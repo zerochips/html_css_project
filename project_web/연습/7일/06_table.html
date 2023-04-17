@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장인</title>
+    <style>
+        table{
+            border: 2px solid #000000;
+            border-collapse: collapse;            
+            width: 500px;        
+        }
+
+        tr, th, td{
+            border: 1px solid #000000;
+            text-align: center;
+        }
+
+        th{
+            background-color: #ffc400;
+        }        
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="./01_text.html">텍스트</a> |       <!-- 메뉴를 만들때 nav를 사용해요 -->
+        <a href="./02_images.html">이미지</a> |
+        <a href="./03_video.html">비디오</a> |
+        <a href="./04_audio.html">오디오</a> |
+        <a href="./05_link.html">링크</a> |
+        <a href="./06_table.html">표</a> |
+        <a href="./07_.html">기타</a> |
+        <a href="./08_selector.html">Selector</a> |
+        <a href="./09_web_design.html">연습문제</a> |
+        <a href="./10_bg_size.html">배경이미지</a> |
+        <a href="./11_anchor.html">앵커만들기</a> |
+        <a href="./12_box_model.html">박스모델</a> |
+    </nav>
+
+    <p></p>
+
+    <table>
+        <caption>게시판</caption>
+        <tr>
+            <th>번호</th>
+            <th>내용</th>
+            <th>작성자</th>
+            <th>날짜</th>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <td>바나나 10kg 판매</td>
+            <td>미니언즈</td>
+            <td>2023.03.19</td>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <td>수박 10kg 판매</td>
+            <td>미니언즈</td>
+            <td>2023.03.19</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>키위 10kg 판매</td>
+            <td>미니언즈</td>
+            <td>2023.03.19</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>딸기 10kg 판매</td>
+            <td>미니언즈</td>
+            <td>2023.03.19</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>레드향 10kg 판매</td>
+            <td>미니언즈</td>
+            <td>2023.03.19</td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td>파인애플 10kg 판매</td>
+            <td>미니언즈</td>
+            <td>2023.03.19</td>
+        </tr>
+        
+    </table>
+
+    <hr>
+
+    <table class="tb2">
+        <caption>프로축구 경기 일정</caption>
+        <thead>
+            <tr>
+                <th>울산</th>
+                <td>울산 vs 인천</td>
+            </tr>
+            <tr>
+                <th rowspan="2">부산</th>
+                <td>부산 vs 대전</td>
+            </tr>
+            <tr>
+                <!-- <th>부산</th> -->
+                <td>김해 vs 충청</td>
+            </tr>
+            <tr>
+                <th>서울</th>
+                <td>서울 vs 강원</td>
+            </tr>
+        </thead>
+    </table>
+
+
+    
+</body>
+</html>
+
+<!-- 
+     caption : 테이블 이름 표시
+     thead   : 테이블의 헤더 영역 지정
+     tbody   : 테이블의 바디 영역 지정
+
+
+     <th>    : 테이블의 헤더부분을 만드는 태그
+     <tr>    : 가로 줄을 만드는
+     <td>    : 데이터 및 정보
+
+     colspan : 가로 합병(열 합병)
+     rowspan : 세로 합병(행 합병)
+
+     align       : 정렬(left, center, right, )
+     border      : 테두리 선의 두께
+     bgcolor     : 배경색
+     border-color: 테두리 선의 색
+     cellspacing : 셀간의 간격
+     width       : 가로길이
+     height      : 세로길이
+     rowspan     : 지정한 값만큼 행을 병합(아래 위)
+     colspan     : 지정한 값만큼 열을 병합(가로)
+
+
+ -->

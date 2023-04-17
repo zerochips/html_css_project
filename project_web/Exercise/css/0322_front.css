@@ -1,0 +1,18 @@
+#container{
+    width: 520px;
+    margin: 10px quto;
+    border: 1px solid #222;
+    padding: 20px;
+}
+.accent{
+    font-size: none;
+}
+
+ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.button input{
+    margin-top: 10px;
+}

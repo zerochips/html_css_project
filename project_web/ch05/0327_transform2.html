@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div{
+            width: 150px;
+            height: 80px;
+            background-color: #0f0;
+        }
+        div.a:hover{
+            transform: rotate(20deg);
+            /* 브라우저 접두사(prefix) */
+            /* 크롬, 사파리 */
+            -webkit-transform: rotate(20deg);
+            /* 익스플로러 */
+            -ms-transform: rotate(20deg);
+            /* 파이어폭스 */
+            -moz-transform: rotate(20deg);
+            /* 오페라 */
+            -o-transform: rotate(20deg);          
+        }
+        div.b:hover{
+            /* X축 방향으로 100px 이동 */
+            transform: translate(100px);
+            -webkit-transform: translate(100px);
+            -ms-transform: translate(100px);
+            -moz-transform: translate(100px);  
+        }
+        div.c:hover{
+            transform: scaleY(1.5);
+            -webkit-transform: scaleY(100px);
+            -ms-transform: scaleY(100px);
+            -moz-transform: scaleY(100px);  
+        }
+        div.d:hover{
+            transform:translate(2.3) ;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>변형전 개체</h2>
+    <div class="a">Hello World! [a]</div>
+    <h2>변형전 개체</h2>
+    <div class="b">Hello World! [b]</div>
+    <h2>변형전 개체</h2>
+    <div class="c">Hello World! [c]</div>    
+    <h2>변형전 개체</h2>
+    <div class="d">Hello World! [d]</div>
+</body>
+</html>

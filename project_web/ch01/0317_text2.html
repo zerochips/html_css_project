@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>텍스트 관련 주요 태그</title>
+        <style>
+            span{
+                /* alt + shift + a : CSS 주석 삽입 */                
+                font-size: 19px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>최근엔 <b><i>디지털 세상</i></b>을 살아가기 위한 <b><em>기본 상식</em></b>으로 코딩 교육이 시행되고 있다.</p>
+        <p>가격 : 13,000원<strong>(부가세별도)</strong></p>
+
+        <p>가격 : 13,000원<small>(부가세별도)</small></p>
+        <p>가격 : 13,000원<big>(부가세별도)</big></p> <!--big 은 Style 에 불러와서 표시, 여기에 쓰면 안됨-->
+        <p>가격 : 13,000원<span>(부가세별도)</span></p> <!--Style 에서 적용-->
+
+        <p>가격 : 13,000원<mark>(부가세별도)</mark></p><!--  -->
+        
+        <p>가격 : 13,000원<u>(부가세별도)</u></p>
+        <p>가격 : 13,000원<s>(54,000원)</s></p>
+        
+        <!-- 한 칸 띄우기 : &nbsp; -->
+        <p>물의 화학식은&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H<sub>2</sub>O이다.</p>
+
+        <p>물의 화학식은 H<sub>2</sub>O이다.</p>
+        <p>E = mc<sup>2</sup></p>
+    </body>
+</html>
+
+
+<!--
+    alt + shift + a : 주석 생성 / 블럭 구역만 주석 변경 가능
+    ctrl + /        : 주석 생성 / 해당 줄 전체 주석 변경
+    &nbsp;          : 1칸 이상 공백 띄기 / 하나당 한 칸
+
+    <b>         : 굵게 강조할 텍스트
+    <strong>    : 굵게 강조할 텍스트
+    <em>        : 글자 기울기 
+    <i>         : 글자 기울기
+    <big>       : 글자 크게
+    <small>     : 글자 작게
+    <u>         : 밑줄 표시
+    <s>         : 취소선
+    <sub>       : 위 첨자
+    <sup>       : 아래 첨자
+    <mark>      : 글자 위 형광 라인 생성
+    <span>      : 인라인 요소 _ 어떤 특성의 값을 서로 공유하는 요소를 묶을 때 사용
+
+-->
