@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변크기</title>
+    <style>
+        *{margin: 0 auto; padding: 0;}
+        #wrap{ 
+            /* width: 960px;  */
+            width: 90%;  /* 가변크기로 하고 */
+            height: 500px; 
+            margin: 0 auto; 
+            border: 4px solid #000;
+        }
+        .container{ 
+            /* width: 100% */
+            width: 93.75%;
+            /* 900px ÷ 960px × 100 = 93.75 */
+            /* 컨테이너를 줄이기 위해서 양쪽 크기를 줄이는거야 그렇게 계산한 방식이 위*/
+            height: 492px;
+            margin: 0 auto;
+            border: 4px solid #000;
+        }
+        .container div{ 
+            display: inline-block;
+            height: 100%;
+         }
+        .container div:first-child{
+            width: 33.35%;
+            /* 300px ÷ 900px × 100 = 33.3*/
+            /* 3등분  */
+            background: #0f0;
+        }
+        .container div:first-child + div{
+            /* width: 66.6%; */
+            width: 66.65%;
+            background: rgb(0, 85, 255);
+        }
+        /* .container div:first-child + div + div{
+            width : 30%;
+            background: orange;
+            margin: 10px;
+        } */        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div></div><div></div><div></div>
+        </div>
+    </div>
+</body>
+</html>
