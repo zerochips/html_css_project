@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<style>
+*{margin:0; padding:0; font-size:100%;}
+
+#para{
+font-size:6em;
+text-align: center;
+}
+
+#para p{
+	/* 0.66em - 6em에 대한 크기 */
+	/* font-size: 1em;  */
+	/* 1em하니까 부모랑 똑같아졌죠 크기를 조금 줄이고 싶어, 0.5em 우리 대충 이렇게 했겠지 */
+	font-size:0.6666666666666667em;
+	/* 64px ÷ 96px 3분의 2 그냥 3분의 2로한 것 같아요*/	
+}#para p + p{
+	font-size: 3rem; /* 2rem 이게 32px 이거든요 */
+}
+</style>
+</head>
+<body>
+	<div id="para">
+	가변적인 폰트1
+		<p>가변적인 폰트2</p>
+		<p>가변적인 폰트2</p>
+	</div>
+</body>
+</html>
+
+<!-- 
+	em - 부모크기의 기준(상대크기)
+	rem - 1rem = 16px(고정크기)
+	vw - 가변 너비 가능
+	vh - 가변 높이 가능
+ -->

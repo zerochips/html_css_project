@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<style>
+*{margin:0; padding:0;}
+#wrap{
+	width: 90%;  /* 가변크기로 아니고 */
+	/*  960px */ /* 고정크기로 했다~~ */
+	height: 500px;
+	margin: 0 auto;
+	border: 4px solid #000;
+}
+.container{
+	width: 93.75%;
+	/* 900px ÷ 960px */
+	/* 이유는 일부러 작게한거죠 */
+	height: 492px;
+	margin: 0 auto;
+	border: 4px solid #000;
+	display: flex;
+	flex-direction: row-reverse;
+	/*  */
+}
+.container div{
+	/*.container에 display: flex;로 수정했어요*/
+	/* display: inline-block */
+	height: 100%;
+}
+.container div:first-child{
+	width: 33.33%;
+	background:  #e75d5d;
+}
+/*.container div:first-child + div{
+	width: 66.66%;
+	/* 900px ÷ 960px */
+	/*background:  #a9e75d;
+}*/
+.container div:nth-child(2){
+	width: 66.66%;
+	/* 900px ÷ 960px */
+	background:  #e0ffba;
+}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="container">
+			<!-- 아무튼 div 수평으로 뒀다가 내렸습니다. 우리 배울 때 내려서 배웠잖아요. 
+				실무에서도 내려서 사용하죠 -->
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</body>
+</html>

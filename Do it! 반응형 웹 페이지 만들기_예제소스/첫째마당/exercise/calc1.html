@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc() 함수</title>
+    <style>
+        /* calc() 
+        - 가변크기에서 패딩이나 마진을 고정크기로 설정할 때 사용 */
+        /* calc() - 가변 크기(너비)를 사용하면서 마진, 패딩을 고정시켜야할 때 */
+        .banner{
+            position: absolute;
+            top: 50px;
+            left: 80px;
+            /* width: 100%; */
+            /* 양족을 80px을 띄어서 160px로 표시해볼게요. 이 위치가 포지션이 80인데 */
+            /* 왼쪽, 오른족 마진을 합한 값 - 160px */
+            width:calc(100% - 160px); 
+            /* width: calc(100% - 182px) 2(테두리) + 20(패딩) */
+            border: 1px solid #000;
+            padding: 10px;
+            background: orange;
+            text-align: center;
+            /* box-sizing: border-box; 하니까 position 값이 80으로 딱 나왔죠, 
+            box-sizing을 안해주면 80이 안나와요 */
+            /* box-sizing: 사용해야 정확한 설정이 됨 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="banner">이것은 배너 광고입니다</h1>
+</body>
+</html>
