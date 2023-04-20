@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 크기 : max-width</title>
+    <style>
+        #wrap{
+            width: 90%;
+            margin: 0 auto;
+        }
+        video{
+            width: 100%;
+            max-width: 1200px;  /* 크기를 1200px 이하로 설정해 보았음, 1200px 까지만 커지고 멈춤 */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div>
+            <video controls>
+                <video src="./source/video.mp4" type="video/mp4"></video>
+                <video src="./source/video.ogv" type="video/ogv"></video>
+                <video src="./source/video.webm" type="video/webm"></video>
+            </video>
+        </div>
+    </div>
+</body>
+</html>

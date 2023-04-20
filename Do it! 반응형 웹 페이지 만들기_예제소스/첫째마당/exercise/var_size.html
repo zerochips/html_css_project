@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 크기</title>
+    <style>
+        #wrap{ 
+            /* width: 600px;  */
+            width: 60%; 
+            height: 500px; 
+            border: 2px solid #333; 
+            margin: 0 auto;
+            /* font-size: 0; */ /* font-size: 0; 이렇게 주면 <div class="box1"></div>여기서 엔터치고 내려도 <div class="box2"></div> 수평으로 정렬된다 */
+            /* display: flex;  */
+            /* flex-direction: row-reverse; */
+            /* align-items: flex-start; */
+        }
+        #wrap div{
+            /* width: 200px; */
+            width: 30.30%;
+            /* margin: 10px; */
+            /* 200px ÷ 660px = 30.30 */
+            display: inline-block;
+            /* float: left; */
+        }
+        .box1{ 
+            /*  300px */
+            /* padding: 50px;  */
+            /* 패딩을 주면서 크기가 나오게 되는겁니다. */
+            /* padding: 50px 7.57%; 가변으로 주는겁니다 */
+            padding: 50px 7.57%;
+            /* 50px ÷ 660px */
+
+            background: #00f; 
+        }
+        .box2{ 
+            /* 360px */
+            /* padding: 80px;  */
+            padding: 80px 12.12%;
+            background: #0f0; 
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box1"></div><div class="box2"></div>
+    </div>
+</body>
+</html>
