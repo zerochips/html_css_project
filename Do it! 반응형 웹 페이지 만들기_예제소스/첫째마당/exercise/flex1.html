@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 예제</title>
+    <style>
+        #wrap{
+            /* 960px */
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+            display: flex;
+            /* flex-wrap: wrap;  */
+            /* 가로로 출력됨 */
+            /* flex-wrap: nowrap; */
+            /* flex-direction: row-reverse; */
+            flex-flow: row wrap;
+        }
+        #wrap div{
+            /* 3등분 한거죠 */
+            width: 100%;
+            /* height: 100%;    */
+        }
+        #wrap div:first-child{
+            background: #eb4a24;
+        }
+        #wrap div:nth-child(2){
+            background: orange;
+        }
+        #wrap div:nth-child(3){
+            background: rgb(0, 32, 16);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

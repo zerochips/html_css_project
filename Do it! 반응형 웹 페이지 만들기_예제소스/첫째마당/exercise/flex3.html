@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 예제</title>
+    <style>
+        #wrap{
+            /* 960px */
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+            display: flex;            
+            flex-wrap: wrap;
+        }
+        #wrap div{            
+            width: 100%;
+        }
+        #wrap div:first-child{
+            /* flex: 1 1 0; 의 적용 -> flext-grow flex-shrink flex-basis */
+            flex: 1 1 0;
+            /* order: 3; */
+            background: #eb4a24;
+        }
+        #wrap div:nth-child(2){
+            flex: 1 1 0;
+            /* order: 1; */
+            background: orange;
+        }
+        #wrap div:nth-child(3){
+            flex: 1 1 0;
+            /* order: 2; */
+            background: rgb(255, 237, 150);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
