@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textarea - resize 속성</title>
+    <style>
+        .memo2{
+            /* 가로 방향으로 크기 조절 */
+            /* resize: horizontal; */
+
+            /* 세로 방향으로 크기 조절 */
+            /* resize: vertical; */
+
+            /* 크기 조절 불가 */
+            resize: none;
+        }
+        p{
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 30px;
+            /* resize: horizontal 와 overflow: auto; 같이 사용하면 textarea 와 같은 효과가 표현됨 */
+            /* resize 와 overflow 함께 사용하여 크기 조절 */
+            resize: horizontal;
+            /* overflow: auto; */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <textarea class="memo1" cols="50" rows="5"></textarea>
+    </div>
+    <div>
+        <textarea class="memo2" cols="50" rows="5"></textarea>
+    </div>
+    <p>오늘은 부처님 오신날입니다. 강남역 그린 도서관은 휴관합니다.</p>
+</body>
+</html>
